@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | About Us</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="1Stop_logo_New_Png.png" alt="error" width="150"></a>
+            
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>|
+            <a href="service.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="contact.html">Contact</a>|
+            <a href="register.html">login/signUp</a>
+        </div>
+    </nav>
+
+    <div class="about_us">
+        <h2>About Us</h2>
+        <div class="about_content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius quidem magni esse ducimus fuga fugiat id assumenda, saepe totam distinctio, provident, voluptate at. Voluptatem veniam laboriosam quisquam, qui, tempora nostrum consequuntur dolor labore amet exercitationem sit suscipit rerum perspiciatis aliquid ullam, voluptatibus tempore a possimus repellat facere! Deleniti, laborum? Animi mollitia aut fugit vel itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id odio qui velit laborum tempore distinctio excepturi, dolore, eius, repellat soluta. Unde consectetur reprehenderit velit cumque quos, officiis quaerat? Rem labore vel voluptatibus amet dignissimos, ducimus voluptatem similique quaerat sequi esse, ex facilis quia doloribus modi impedit repudiandae molestias non officia! Blanditiis corrupti minus id! Autem!</p>
+        </div>
+<hr>
+        <h2>Our Mission</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia in voluptatem reprehenderit? Ipsam in dolorem magnam dolor cupiditate tempore provident incidunt earum optio esse ullam quasi ipsum ratione eligendi, excepturi maxime quam? Accusantium perferendis, non quidem dolorem vero sint alias aspernatur ducimus unde amet fugit voluptatem accusamus vel. Dignissimos ratione commodi totam minima cumque, iure facere saepe aut sequi rem delectus repudiandae sed incidunt. Nulla sequi aut officiis perferendis necessitatibus illum, quisquam eum tempora magni voluptatum facilis rerum repudiandae et optio deserunt aspernatur. Placeat eaque expedita aspernatur temporibus?</p>
+    </div>
+
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name="Submit-googlesheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email iD"><br>
+                <input type="number" name="Number" placeholder="contact number"><br>
+                <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_logo">
+            <a href="index.html"><img src="1Stop_logo_New_Png.png" alt="error" width="150"></a>
+        </div>
+        <br>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="service.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="contact.html">Contact</a>|
+            <a href="register.html">login/signUp</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms of Use</a>|
+            <a href="">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/1stop.ai/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/1stopinsurance" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://api.whatsapp.com/send?phone=+919128138650" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel: +919128138650"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto: support@1stop.ai"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2021 1stop. All right reserved</p>
+    </footer>
+
+    
+    <script type="text/javascript">
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbykotX8HlbCaF2pcxmmROjHPnswfBSr8o_InsszUDdEtlN7vFyC1RsnuuRvoZlWSyechQ/exec'
+            const form = document.forms['Submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you for your review, Hope you had great shopping with us.."))
+                .catch(error => console.error('Error!', error.message))
+            })
+    </script>
+    
+</body>
+</html>
